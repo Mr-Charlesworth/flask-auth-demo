@@ -1,0 +1,4 @@
+.idea
+.venv
+messages.db
+__pycache__

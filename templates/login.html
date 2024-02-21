@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% macro input(name, label, type='text') -%}
+    <div class="form-group">
+        <label for="{{ name }}">{{ label }}</label>
+        <input
+                type="{{ type }}"
+                class="form-control"
+                name="{{ name }}"
+                id="{{ name }}"
+                placeholder="{{ label }}"
+        >
+    </div>
+{% endmacro %}
+
+{% block content %}
+
+    <h1>Register</h1>
+    {% if has_errors %}
+        <div class="alert alert-danger" role="alert">
+            Login failed. Please check entered details and try again.
+        </div>
+    {% endif %}
+    <form method="POST" action="/login">
+        {{ input('username', 'Username') }}
+        {{ input('password', 'Password', 'password') }}
+        <button type="submit" class="btn btn-primary mt-1">Submit</button>
+    </form>
+
+{% endblock %}
