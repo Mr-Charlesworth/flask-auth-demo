@@ -198,9 +198,9 @@ def home():
 
 - Have a look at the navbar in [base.html](./templates/base.html) to see how the user is used to show the logged in state and to show/hide specific navbar items
 
-## Big Brain Task
+## Other Stuff To Do
 
-The main 'big brain' task is to understand this code, but here are something other things to do:
+The main task is to understand this code. When you have done that, try this:
 
 - Have a look at [initdb.sql](./initdb.sql) which was used to create the database.
 - You will see that there is a table for messages.
