@@ -110,7 +110,7 @@ sqlite3 message.db < initdb.sql
 </form>
 ```
 
-- The template is aware of errors via parameters "has_errors" which is a bool and the "errors" dictionary object.
+- The template is aware of errors via parameters (passed to the "render_template" function in Flask) "has_errors" which is a bool and the "errors" dictionary object.
 - The "errors" dictionary object has a list of error messages under each field which is empty if there are no messages
 - For example "errors['password']" contains all error messages for the password field or is am empty list if there are none.
 
