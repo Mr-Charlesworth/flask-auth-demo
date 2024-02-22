@@ -4,7 +4,7 @@ This repository is a demonstration of a basic app with user registration and aut
 password.
 
 Basic registration and logging in has been implemented for you, your job is to read the code, understand it and ask
-questions about anything you do not understand.
+questions about anything that is not clear.
 
 ## Forking / Environment stuff
 
