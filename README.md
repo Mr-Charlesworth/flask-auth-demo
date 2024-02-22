@@ -30,10 +30,11 @@ git clone [the-url-you-copied]
 - Now when we install packages, we install them in an isolated environment, which is good.
 - Use the terminal in PyCharm as this will use the environment we just created.
 - If you already have a terminal open, open a new one to be sure it is using the environment.
-- Install flask
+- Install flask and bcrypt
 
 ```bash
 pip install flask
+pip install bcrypt
 ```
 
 ## Setting up the Database
@@ -41,16 +42,27 @@ pip install flask
 - You need the database to be named "messages.db" and placed in the project root.
 - The Sqlite database file is not included in this repository, but you can create your own using the SQL
   in [initdb.sql](./initdb.sql)
-- You can use the commandline tool to import the database using the sql file:
+- You can use the commandline tool to import the database using the sql file either using bash:
 
 ```bash
 sqlite3 message.db < initdb.sql
+```
+
+- Or from windows command prompt:
+
+```
+sqlite3.exe messages.db ".read initdb.sql"
 ```
 
 - Note that you will need to enter the path your sqlite3.exe if you do not already have it on your PATH:
 
 ```bash
 [path-to-sqlite.exe] message.db < initdb.sql
+```
+
+- Or from windows command prompt:
+```
+[path-to-sqlite.exe] messages.db ".read initdb.sql"
 ```
 
 ## Registration form
